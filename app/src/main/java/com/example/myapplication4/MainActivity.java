@@ -35,7 +35,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
     public void openActivity2(){
 
         EditText editText1 = (EditText) findViewById(R.id.editText1);
@@ -51,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
         final String str = data.getStringExtra(MainActivity.text);
-        TextViegitw textview = (TextView) findViewById(R.id.textView1);
+        TextView textview = (TextView) findViewById(R.id.textView1);
 
         textview.setText(str);
     }
